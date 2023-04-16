@@ -1,15 +1,10 @@
 //auth
 // Reemplaza "SPREADSHEET_ID" con la ID de tu hoja de cálculo de Google Sheets.
-
-
 function authenticateUser(username, password) {
     var SPREADSHEET_ID = "1Bn0vHj4Cs4ADeGLDeND3iPFSPK_4AyoYwH2mVLMKnhU";
 var SHEET_NAME = "usersData";
-var API_KEY = "AIzaSyAYGHByZLx72_QpK8jSCkz-v54vnkjhdfU";
-// API OK
-/*AIzaSyAYGHByZLx72_QpK8jSCkz-v54vnkjhdfU//
-//API PRUEBA
-AIzaSyDDe899ENM_-gYlYHZezwSz7RS1zyTBiG0//*/
+var API_KEY = apiKey;
+console.log(API_KEY);
     
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + SPREADSHEET_ID + "/values/" + SHEET_NAME + "?key=" + API_KEY;
   fetch(url)
