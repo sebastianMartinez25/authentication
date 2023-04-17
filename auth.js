@@ -1,10 +1,8 @@
-//auth
-// Reemplaza "SPREADSHEET_ID" con la ID de tu hoja de cálculo de Google Sheets.
+import { apikeyg, spreadSheetId } from "./postList.js";
 function authenticateUser(username, password) {
-    var SPREADSHEET_ID = "1Bn0vHj4Cs4ADeGLDeND3iPFSPK_4AyoYwH2mVLMKnhU";
+    var SPREADSHEET_ID = spreadSheetId;
 var SHEET_NAME = "usersData";
-var API_KEY = apiKey;
-console.log(API_KEY);
+var API_KEY = apikeyg;
     
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + SPREADSHEET_ID + "/values/" + SHEET_NAME + "?key=" + API_KEY;
   fetch(url)
